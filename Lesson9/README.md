@@ -11,4 +11,4 @@
 
 - This architecture allows Node.js to handle concurrent operations efficiently, making it ideal for building scalable, real-time applications.
 
-![LibUV Event Loop Diagram](/event-loop.png)
+![LibUV Event Loop Diagram](./event-loop.png)
