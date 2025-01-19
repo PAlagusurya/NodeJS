@@ -15,10 +15,11 @@ app.use("/test", testAuth, (req, res) => {
 
 app.use("/home", (req, res) => res.send("In Dashboard"));
 
-app.use("/test", (err, req, res, next) => {
-  if (err) {
-    res.status(500).send("Something went wrong");
-  }
-});
+// Cannot set headers after they are sent to the client
+// app.use("/test", (err, req, res, next) => {
+//   if (err) {
+//     res.status(500).send("Something went wrong");
+//   }
+// });
 
 app.listen(3000, () => console.log("Listening in port 3000"));
